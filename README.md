@@ -89,3 +89,23 @@ instance - a distinct copy of an object. If Person is an object, me existing in 
   not exist, so it is not an instance of a person.
 - shade - shading - shadowing - inserting a full copy of a project that your project needs into the finished jar file.
 - serializer - something that converts an object or data into more concise and storable data
+- yml - simple configuration format. Uses indents for where the data is at and stores things in key: pair values.
+- json - data format **that is not for configuration yet some people use it anyways fucking idiots** that uses brackets {} to explicitly define where data is at.
+- hocon - human readable configuration format (hrcf, not hocon). json but it is better to use for configuration since it is more user friendly.
+- wrapper - something that contains another object inside of itself and typically uses that object for base functionality, adding additional functionality on top of it.
+- delegate - something that is held inside of another object. calls to the delegate will typically pass through a wrapper first which may do things as it sees fit.
+- jdbc - java's built in library for interacting with <sql> databases
+
+# projects
+- minecraft - what does it look like
+- bukkit - old outdated <implement>ation of the minecraft <server> that sucks and is really bad.
+- spigot - <implement>ation of the minecraft <server> that expands on bukkit and tries to make it better
+- paperspigot - good <implement>ation of the minecraft <server> that is fast and expands on spigot. Industry standard.
+- guice - <dependency injection> framework by google, standard.
+- guava - big collection of assorted utilities by google. what the fuck does a guava have to do with that?
+- gson - serializer that converts java objects into <json> files for transportation, by google.
+- openjdk - <implement>ation of Java 
+- azul - fast <implement>ation of java
+- hikaricp - library for <jdbc> connection pooling (making connections reusable and fast) that is industry standard.
+- bungeecord - minecraft <server> that redirects <clients> who are making requests to it to other connected servers. Slow and outdated.
+- velocity - fast minecraft <server> that redirects <clients>. Designed substantially better but very new so less support for it.
