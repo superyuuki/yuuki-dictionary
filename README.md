@@ -12,29 +12,29 @@ if some asshole in a discord is speaking hundreds of words you don't get when yo
 things in <brackets> - something you can Ctrl + F to find more info on
 
 # words
-state - TODO explain this one better - whether something has been created and can be modified or not.
-semantics - little details about something
-concurrency - does it utilize multiple threads?
-parallel - does it do more than one thing at a time
-asynchronous - does it do things out of order
-synchronous - does things in order 
-mutable - it changes state, it can be modified
-immutable - it does not change state, it cannot be modified, safer
-protected keyword - can be inherited. don't use this.
-private keyword - can only be accessed by current instance of current class (OOP). Safe.
-final keyword - it does not change. Makes things immutable.
-static keyword - you can access it from anywhere regardless of if an object exists or not. bad.
-thread - something that runs your code. See why it's unsafe if you have two things running your code and changing things at the same time?
-caching - storing a value in memory(somewhere you can access easily) after a lengthy operation so that it does not take as long to access in the future
-reflection - uses java's internal unsafe stuff to look at parts of your code that you didn't explicitly say should be read
-jvm - java virtual machine, literally a virtual machine where your code is run
-memory - your computers memory, stuff is stored there.
-reference - tells you where an object is. 
-atomic - TODO explain this one well
-cas - compare and swap. Basically get something, make a local modification to it, check if it's still the same in volatile memory (this seems like a no brainer but threads are evil) and if it is, do the modification. Otherwise, try again.
-threadsafety - sometimes things go wrong when two threads are accessing the same thing due to how computers store data. threadsafety is when you explicitly counter this with    design and code
-synchronization - making sure that access to something that is mutable (can change) from multiple threads is done safely
-locking - a way of making sure code with multiple threads functions safely by limiting access to something to one thread at a time. Slow.
+- state - TODO explain this one better - whether something has been created and can be modified or not.
+- semantics - little details about something
+- concurrency - does it utilize multiple threads?
+- parallel - does it do more than one thing at a time
+- asynchronous - does it do things out of order
+- synchronous - does things in order 
+- mutable - it changes state, it can be modified
+- immutable - it does not change state, it cannot be modified, safer
+- protected keyword - can be inherited. don't use this.
+- private keyword - can only be accessed by current instance of current class (OOP). Safe.
+- final keyword - it does not change. Makes things immutable.
+- static keyword - you can access it from anywhere regardless of if an object exists or not. bad.
+- thread - something that runs your code. See why it's unsafe if you have two things running your code and changing things at the same time?
+- caching - storing a value in memory(somewhere you can access easily) after a lengthy operation so that it does not take as long to access in the future
+- reflection - uses java's internal unsafe stuff to look at parts of your code that you didn't explicitly say should be read
+- jvm - java virtual machine, literally a virtual machine where your code is run
+- memory - your computers memory, stuff is stored there.
+- reference - tells you where an object is. 
+- atomic - TODO explain this one well
+- cas - compare and swap. Basically get something, make a local modification to it, check if it's still the same in volatile memory (this seems like a no brainer but threads are - evil) and if it is, do the modification. Otherwise, try again.
+- threadsafety - sometimes things go wrong when two threads are accessing the same thing due to how computers store data. threadsafety is when you explicitly counter this with    - design and code
+- synchronization - making sure that access to something that is mutable (can change) from multiple threads is done safely
+- locking - a way of making sure code with multiple threads functions safely by limiting access to something to one thread at a time. Slow.
 mutex - mutual exclusion: only one thing at a time. locking is mutual exclusion of threads. Stupid malware devs advertise 'mutex', they mean only one instance of their shitty    virus is open at one time.
 encapsulation - controlling access to data. Contrary to what your teacher tells you, getters and setters are not encapsulation.
 dependency injection - setting the state (modifiable part) of an object via a constructor (at initialization of the object) rather than after the object already exists. 
